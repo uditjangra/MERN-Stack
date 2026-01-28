@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            border : 1px solid black;
+            background-color: coral;
+        }
+        @keyframes slide-in {
+            0%{
+                transform: translate(100px, 100px);
+                rotate: 0deg;
+            }
+            25%{
+                transform: translate();
+            }
+            50%{
+                transform: translate(200px, 200px);
+                border-radius: 50%;
+                background-color: yellow;
+                rotate: 45deg;
+            }
+            75%{
+                transform: translate();
+    
+            }
+            100%{
+                transform: translate(100px, 100);
+                rotate: 0deg;
+            }
+    
+        }
+        @keyframes slide-out {
+            from {
+                transform: translate(0px, 0px);
+            }
+            to{
+                transform: translateX(200px);
+            }
+        }
+        #box {
+            animation: slide-in 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id = "box"></div>
+</body>
+</html>

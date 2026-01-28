@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        width: 300px;
+        height : 400px;
+        background: blue;
+        position: relative;
+    }
+    .child {
+        font-size: 16px;
+         border: 2px solid #333;
+        color: red;
+        position: absolute;
+        left: 120px;
+    }
+    .child > p:nth-child(2){
+        color: green;
+    }
+     .child > third-child{
+        color: green;
+    }
+</style>
+<body>
+    <div class="parent">
+        this is the parent
+        <div class = "child">
+            <p>this is a 1th paragraph</p>
+            <p>this is a 2th paragraph</p>
+            <p>this is a 3th paragraph</p> 
+        </div>
+    </div>
+</body>
+</html>

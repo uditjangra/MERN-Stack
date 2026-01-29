@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <script>
+        function isObjectType(x){
+            if (x !== null && typeof x === 'object' && !Array.isArray(x)){
+                return true;
+            }
+            return false;
+        }
+        let number = {};
+        console.log(isObjectType(2))
+        console.log(isObjectType({}))
+        console.log(isObjectType(number))
+        console.log(isObjectType(null))
+    </script>
+</head>
+<body>
+    <!-- Write a JavaScript function that takes a variable x as an argument and checks if its type is "object". The function should return trye if the type is "object", and false otherwise. -->
+</body>
+</html>

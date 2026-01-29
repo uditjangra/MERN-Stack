@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <script>
+        function arrayElementTypes(arr){
+            let arr2 = [];
+            for(let i = 0; i < arr.length; i++){
+                arr2.push(typeof arr[i]);
+            }
+            return arr2;
+        }
+        const typesArray = [1, "name", true, undefined, null, {a:1}, [1,2,3]];
+        console.log(arrayElementTypes(typesArray));
+    </script>
+</head>
+<body>
+     <!-- Write a JavaScript function that takes an array as an argument and returns a new array with the same elements, but with each element's type converted to a string.
+      For Example, if the input array is [1,"hello", true], the output should be ["number", "string", "boolean"] -->
+</body>
+</html>

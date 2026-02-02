@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search&Show</title>
+</head>
+<body>
+    <input type="text" id="itemInput" placeholder="Enter item">
+    <button onclick="addItem()">Print The String</button>
+    <ul id="myList"></ul>
+    <!-- <button onclick = "changeColor()">change color</button> -->
+    <button onClick="removeItem()">Remove Last String</button>
+</body>
+<script>
+    function addItem(){
+        const itemInput = document.getElementById("itemInput")
+        const myList = document.getElementById("myList")
+
+        const listItem = document.createElement("li")
+
+        listItem.style.color = itemInput.value;
+        listItem.textContent = itemInput.value;
+        myList.appendChild(listItem);
+        itemInput.value = "";
+
+    }
+    function removeItem(){
+        let i = mylist.length();
+        myList[i] = ""
+    }
+</script>
+</html>

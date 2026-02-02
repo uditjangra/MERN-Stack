@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+   <div class="form-example">
+    <label for="password">Enter your password: </label>
+    <input type="password" name="password" id="pwd" required />
+  </div>
+  <button type="submit " id="submit ">Submit</button>
+</form>
+<script>    
+    let btn = document.getElementById("submit")
+    let password = document.getElementById("password")
+    button.addEventListener("click",function(){
+        alert("Button Clicked")
+        let pwd = password.value;
+        if(pwd.length<6){
+            alert("Password length should be greater than 6")
+            
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Parent">
+        I am a div tag
+    </div>
+    <p class="red">I am a p tag - 1</p>
+    <p class="red">I am a p tag - 2</p>
+    <p class="red">I am a p tag - 3</p>
+    <p class="red">I am a p tag - 4</p>
+    <p class="red">I am a p tag - 5</p>
+</body>
+</html>
+<script>
+    let div = document.getElementById("Parent");
+    // console.log(div);
+    let value1 = document.querySelectorAll(".red");
+    // console.log(pTag)
+    value1.forEach((i,idx) => {
+        i.style.fontsize = "2rem";
+        if(idx%2===0){
+            i.style.color = "green";
+        }
+        else{
+            i.style.color = "red";
+        }
+    });
+</script>

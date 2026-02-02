@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+</head>
+<body>
+    
+</body>
+<script>    
+    const nav = document.createElement("nav");
+    const logo = document.createElement("div");
+    const ul = document.createElement("ul");
+
+const menuItems = ["Home", "About", "Services", "Contact"];
+menuItems.forEach(item => {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+
+  a.innerText = item;
+  a.href = "#";
+
+  li.appendChild(a);
+  ul.appendChild(li);
+});
+
+const menuBtn = document.createElement("div");
+menuBtn.innerText = "☰";
+
+logo.innerText = "MySite";
+
+nav.appendChild(logo);
+nav.appendChild(menuBtn);
+nav.appendChild(ul);
+
+document.body.appendChild(nav);
+
+
+nav.style.display = "flex";
+nav.style.justifyContent = "space-between";
+nav.style.alignItems = "center";
+nav.style.padding = "15px 30px";
+nav.style.backgroundColor = "#111";
+nav.style.color = "white";
+nav.style.position = "relative";
+
+logo.style.fontSize = "1.5rem";
+logo.style.fontWeight = "bold";
+ul.style.display = "flex";
+ul.style.listStyle = "none";
+ul.style.gap = "20px";
+ul.style.margin = "0";
+ul.style.padding = "0";
+
+document.querySelectorAll("a").forEach(link => {
+  link.style.color = "white";
+  link.style.textDecoration = "none";
+  link.style.fontSize = "1rem";
+});
+
+menuBtn.style.fontSize = "1.8rem";
+menuBtn.style.cursor = "pointer";
+menuBtn.style.display = "none";
+
+function handleResize() {
+  if (window.innerWidth <= 768) {
+    ul.style.display = "none";
+    ul.style.flexDirection = "column";
+    ul.style.backgroundColor = "#111";
+    ul.style.position = "absolute";
+    ul.style.top = "60px";
+    ul.style.right = "0";
+    ul.style.width = "200px";
+    ul.style.padding = "20px";
+
+    menuBtn.style.display = "block";
+  } else {
+    ul.style.display = "flex";
+    ul.style.flexDirection = "row";
+    ul.style.position = "static";
+    menuBtn.style.display = "none";
+  }
+}
+
+menuBtn.addEventListener("click", () => {
+  ul.style.display = ul.style.display === "none" ? "flex" : "none";
+});
+
+
+handleResize();
+window.addEventListener("resize", handleResize);
+
+</script>
+</html>

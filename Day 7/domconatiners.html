@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers/Images</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    let container = document.getElementById("container")
+    container.style.border = "2px solid black"
+    container.style.height = "500px"
+    container.style.width = "700px"
+
+    let div = document.createElement("div")
+    div.style.border = "2px solid blue"
+    div.style.height = "300px"
+    div.style.width = "300px"
+
+    let h1 = document.createElement("h1")
+    h1.innerHTML = "Honey Badger"
+
+    let img = document.createElement("img")
+    img.src = "https://toppng.com/uploads/preview/honey-badger-png-clipart-library-stock-honey-badger-11563212351sdnflcmvlf.png"
+    
+    img.style.height = "200px"
+    img.style.width = "200px"
+
+    div.style.textAlign="center"
+
+    div.append(img)
+    div.append(h1)
+    container.append(div)
+</script>
+</html>

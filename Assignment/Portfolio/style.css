@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.section {
+  padding: 30px 10px;
+  text-align: center;
+}
+.gallery {
+  width: 100%;
+}
+
+.project {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+input, textarea, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #00bcd4;
+  color: black;
+  cursor: pointer;
+}
+
+#about h3 {
+  font-weight: normal;
+  color: #00bcd4;
+  margin-top: -10px;
+  font-size: 2em;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+#MyProjects{
+  font-size: 50px;
+}
+
+#name{
+  font-size: 75px;
+}
+
+#projettitle{
+  color: white;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+  color: #00bcd4;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #444;
+}
+
+.divider::before {
+  margin-right: 15px;
+}
+
+.divider::after {
+  margin-left: 15px;
+}
+
+
